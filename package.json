@@ -1,0 +1,42 @@
+{
+  "name": "herbs-frontend",
+  "version": "1.0.0",
+  "description": "herbs commercial herb",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix ./herbs-web",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Ripper/herbs-web.git"
+  },
+  "author": "Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/T-Ripper/herbs-web/issues"
+  },
+  "homepage": "https://github.com/T-Ripper/herbs-web#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-paystack": "^3.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
