@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/T-Ripper/herbs-web/issues"
   },
-  "homepage": "https://github.com/T-Ripper/herbs-web#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
